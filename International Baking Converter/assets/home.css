@@ -1,0 +1,699 @@
+.background {
+  position: fixed;
+  opacity: .6;
+  z-index: 1;
+  min-height: 100%;
+  min-width: 100%;
+  width: 550px;
+  height: 784px;
+  top: 0;
+  left: -20%;
+  background-size: cover;
+  background-position: center;
+}
+
+#hide {
+display: none;
+}
+
+.help {
+  float: right;
+  margin: 0;
+  text-align: center;
+  padding: 2%;
+}
+#help {
+  padding: 20px 8px;
+  width: 150px;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+#back {
+  width: 150px;
+  height: 40px;
+}
+
+#value, #Selection, #Selection2, #Selection3,
+#Selection4, #Selection5, #Selection6, #Selection7,
+#Selection8, #Selection9, #Selection10, #Selection11,
+#Selection12, #fracOutput,
+#wvalue, #wSelection, #wSelection2,
+#wconvertedOutput, #wfracOutput, #convert, #clear,
+#wconvert, #wclear, #text, #text2, #text3, #text4,
+#text5, #text6, #text7, #text8, #text9, #text10,
+#text11, #text12, #adjvalue, #adjvalue2, #adjvalue3,
+#adjvalue4, #adjvalue5, #adjvalue6, #adjvalue7, #adjvalue8,
+#adjvalue9, #adjvalue10, #adjvalue11, #adjvalue12,
+#convertedOutput, #convertedOutput2, #convertedOutput3,
+#convertedOutput4, #convertedOutput5, #convertedOutput6,
+#convertedOutput7, #convertedOutput8, #convertedOutput9,
+#convertedOutput10, #convertedOutput11, #convertedOutput12,
+#convertQrtr, #convertThird, #convertHalf, #convertDub,
+#convertTrip, #convertQuad, #reset, #addDiv2, #addDiv3,
+#addDiv4, #addDiv5, #addDiv6, #addDiv7, #addDiv8, #addDiv9,
+#addDiv10, #addDiv11, #addDiv12, #minusDiv2,
+#minusDiv3, #minusDiv4, #minusDiv5, #minusDiv6, #minusDiv7,
+#minusDiv8, #minusDiv9, #minusDiv10, #minusDiv11, #minusDiv12,
+#ukvalue, #ukSelection, #ukSelection2, #ukOutput,
+#ukwvalue, #ukwSelection, #ukwSelection2, #ukwOutput,
+#ukconvert, #ukclear, #ukwconvert, #ukwclear {
+  border: solid black 1px;
+  font: black;
+  font-weight: bold;
+}
+/*Recipe adjuster formatting*/
+#add2, #add3, #add4, #add5, #add6, #add7, #add8,
+#add9, #add10, #add11, #add12 {
+  display: none;
+}
+
+
+.body {
+  z-index: 99;
+  position: relative;
+}
+#tips {
+  background-color: white;
+  padding: 7px;
+  border-radius: 10%;
+  border: 2px black dashed;
+}
+
+/*Conversion defs side note*/
+
+
+
+
+
+#adjvalue, #adjvalue2, #adjvalue3,
+#adjvalue4, #adjvalue5, #adjvalue6,
+#adjvalue7, #adjvalue8, #adjvalue9,
+#adjvalue10, #adjvalue11, #adjvalue12 {
+  width: 7em;
+}
+
+#back, #frac {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*Help page format, table*/
+table{
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 4px;
+}
+
+/*What do I need output box*/
+.whatbox {
+  width: 250px;
+  height: 100px;
+  background-color: white;
+  vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.whatBack {
+  background-color: lightblue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px 5px;
+    padding: 10px;
+
+}
+
+.grid-item {
+    background-color: lightblue;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    height: 18vh;
+    width: 18vw;
+    z-index: 99;
+}
+
+.grid-item a {
+    color: black;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+/* Smartphones (portrait) ---------------- */
+@media only screen
+and (max-width : 599px)
+and (orientation: portrait)
+{
+    .background {
+      position: fixed;
+      opacity: .7;
+      z-index: 1;
+      min-height: 100%;
+      min-width: 100%;
+      height: 320px;
+      width: 599px;
+      top: 0;
+      left: -20%;
+      background-size: cover;
+      background-position: center;
+      opacity: .7;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 340px;
+    }
+
+    .grid-item {
+        background-color: lightblue;
+        border: 2px black solid;
+        border-radius: 5px;
+        font-size: 16pt;
+        font: serif;
+        height: 120px;
+        width: 120px;
+        font-weight: bold;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .grid-item a {
+        color: black;
+        justify-items: center;
+        font: serif;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+    }
+    #warn {
+        font-weight: bold;
+    }
+    .body {
+        height: 260px;
+        width: 340px;
+        font-size: 14pt;
+    }
+    #tips {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+    }
+    #tips2 {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      width: 180px;
+    }
+    .adjust {
+        width: 380px;
+    }
+    #addDiv2, #addDiv3,
+    #addDiv4, #addDiv5, #addDiv6, #addDiv7, #addDiv8, #addDiv9,
+    #addDiv10, #addDiv11, #addDiv12, #minusDiv2,
+    #minusDiv3, #minusDiv4, #minusDiv5, #minusDiv6, #minusDiv7,
+    #minusDiv8, #minusDiv9, #minusDiv10, #minusDiv11, #minusDiv12, #help {
+        width: 40px;
+        height: 40px;
+        font-size: 14pt;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;    
+    }
+    #adjvalue, #adjvalue2, #adjvalue3,
+    #adjvalue4, #adjvalue5, #adjvalue6,
+    #adjvalue7, #adjvalue8, #adjvalue9,
+    #adjvalue10, #adjvalue11, #adjvalue12, #Selection, #Selection2, #Selection3,
+    #Selection4, #Selection5, #Selection6, #Selection7,
+    #Selection8, #Selection9, #Selection10, #Selection11,
+    #Selection12, #text, #text2, #text3, #text4,
+    #text5, #text6, #text7, #text8, #text9, #text10,
+    #text11, #text12, #convertedOutput, #convertedOutput2, #convertedOutput3,
+    #convertedOutput4, #convertedOutput5, #convertedOutput6,
+    #convertedOutput7, #convertedOutput8, #convertedOutput9,
+    #convertedOutput10, #convertedOutput11, #convertedOutput12, #value,
+    #wvalue, #wSelection, #wSelection2,
+    #wconvertedOutput, #wfracOutput {
+        width: 200px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 14pt;
+    }
+    #convertQrtr, #convertThird, #convertHalf, #convertDub,
+    #convertTrip, #convertQuad, #reset, #convert, #clear, #wconvert, #wclear {
+        width: 115px;
+        height: 50px;
+        font-size: 14pt;
+    }
+    #back, #help {
+    width: 100px;
+    height: 40px;
+    font-size: 18pt;
+    }
+    #frac {
+        width: 275px;
+        height: 40px;
+        font-size: 16pt;
+    }
+}
+
+
+/* Smartphones (landscape) ---------------- */
+@media only screen
+and (max-width : 1023px)
+and (orientation: landscape)
+{
+    .background {
+        position: fixed;
+        opacity: .7;
+        z-index: 1;
+        min-height: 100%;
+        min-width: 100%;
+        width: 1023px;
+        height: 700px;
+        top: -20%;
+        left: -20%;
+        background-size: cover;
+        background-position: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 800px;
+    }
+    .grid-item {
+        background-color: lightblue;
+        border: 2px black solid;
+        border-radius: 5px;
+        font-size: 16pt;
+        font: serif;
+        height: 90px;
+        width: 175px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    .grid-item a {
+        color: black;
+        justify-items: center;
+        font: serif;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+    }
+    #warn {
+        font-weight: bold;
+    }
+    .body {
+        height: 500px;
+        width: 700px;
+        font-size: 14pt;
+    }
+    #tips {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      width: 270px;
+      float: right;
+    }
+    #tips2 {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      float:right;
+    }
+    .adjust {
+            width: 680px;
+        }
+        #addDiv2, #addDiv3,
+        #addDiv4, #addDiv5, #addDiv6, #addDiv7, #addDiv8, #addDiv9,
+        #addDiv10, #addDiv11, #addDiv12, #minusDiv2,
+        #minusDiv3, #minusDiv4, #minusDiv5, #minusDiv6, #minusDiv7,
+        #minusDiv8, #minusDiv9, #minusDiv10, #minusDiv11, #minusDiv12, #help {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 14pt;
+        }
+        #adjvalue, #adjvalue2, #adjvalue3,
+        #adjvalue4, #adjvalue5, #adjvalue6,
+        #adjvalue7, #adjvalue8, #adjvalue9,
+        #adjvalue10, #adjvalue11, #adjvalue12, #Selection, #Selection2, #Selection3,
+        #Selection4, #Selection5, #Selection6, #Selection7,
+        #Selection8, #Selection9, #Selection10, #Selection11,
+        #Selection12, #text, #text2, #text3, #text4,
+        #text5, #text6, #text7, #text8, #text9, #text10,
+        #text11, #text12, #convertedOutput, #convertedOutput2, #convertedOutput3,
+        #convertedOutput4, #convertedOutput5, #convertedOutput6,
+        #convertedOutput7, #convertedOutput8, #convertedOutput9,
+        #convertedOutput10, #convertedOutput11, #convertedOutput12, #value,
+        #wvalue, #wSelection, #wSelection2,
+        #wconvertedOutput, #wfracOutput {
+            width: 300px;
+            height: 50px;
+            margin-top: 5px;
+            font-size: 14pt;
+        }
+        #convertQrtr, #convertThird, #convertHalf, #convertDub,
+        #convertTrip, #convertQuad, #reset, #convert, #clear, #wconvert, #wclear {
+            width: 130px;
+            height: 65px;
+            font-size: 14pt;
+        }
+        #back, #help {
+        width: 100px;
+        height: 50px;
+        font-size: 16pt;
+        }
+        #frac {
+            width: 275px;
+            height: 50px;
+            font-size: 16pt;
+        }
+}
+
+
+/* Tablets (landscape) ------------------- */
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1365px)
+and (orientation : landscape)
+{
+    .background {
+        position: fixed;
+        opacity: .7;
+        z-index: 1;
+        min-height: 100%;
+        min-width: 100%;
+        width: 1365px;
+        height: 900px;
+        top: 0%;
+        left: 0%;
+        background-size: cover;
+        background-position: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 1000px;
+    }
+    .grid-item {
+        background-color: lightblue;
+        border: 2px black solid;
+        border-radius: 5px;
+        font-size: 28pt;
+        font: serif;
+        height: 230px;
+        width: 325px;
+        font-weight: bold;
+        margin: 15px;
+    }
+    .grid-item a {
+        color: black;
+        justify-items: center;
+        font: serif;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+    }
+    #warn {
+        font-weight: bold;
+    }
+    .body {
+        height: 500px;
+        width: 1200px;
+    }
+    #tips {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      width: 270px;
+      float: right;
+    }
+    #tips2 {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      float:right;
+    }
+    .adjust {
+      width: 880px;
+    }
+    #addDiv2, #addDiv3,
+    #addDiv4, #addDiv5, #addDiv6, #addDiv7, #addDiv8, #addDiv9,
+    #addDiv10, #addDiv11, #addDiv12, #minusDiv2,
+    #minusDiv3, #minusDiv4, #minusDiv5, #minusDiv6, #minusDiv7,
+    #minusDiv8, #minusDiv9, #minusDiv10, #minusDiv11, #minusDiv12, #help {
+      width: 70px;
+      height: 70px;
+      margin: 5px;
+      font-size: 18pt;
+    }
+    #adjvalue, #adjvalue2, #adjvalue3,
+    #adjvalue4, #adjvalue5, #adjvalue6,
+    #adjvalue7, #adjvalue8, #adjvalue9,
+    #adjvalue10, #adjvalue11, #adjvalue12, #Selection, #Selection2, #Selection3,
+    #Selection4, #Selection5, #Selection6, #Selection7,
+    #Selection8, #Selection9, #Selection10, #Selection11,
+    #Selection12, #text, #text2, #text3, #text4,
+    #text5, #text6, #text7, #text8, #text9, #text10,
+    #text11, #text12, #convertedOutput, #convertedOutput2, #convertedOutput3,
+    #convertedOutput4, #convertedOutput5, #convertedOutput6,
+    #convertedOutput7, #convertedOutput8, #convertedOutput9,
+    #convertedOutput10, #convertedOutput11, #convertedOutput12, #value,
+    #wvalue, #wSelection, #wSelection2,
+    #wconvertedOutput, #wfracOutput {
+      width: 500px;
+      height: 70px;
+      margin-top: 5px;
+      font-size: 18pt;
+    }
+    #convertQrtr, #convertThird, #convertHalf, #convertDub,
+    #convertTrip, #convertQuad, #reset, #convert, #clear, #wconvert, #wclear {
+      width: 230px;
+      height: 55px;
+      font-size: 18pt;
+    }
+    #back, #help {
+      width: 100px;
+      height: 50px;
+      font-size: 24pt;
+    }
+    #frac {
+      width: 275px;
+      height: 60px;
+      font-size: 18pt;
+    }
+}
+
+/* Desktops and Tablet (portrait) ------------------ */
+@media only screen
+and (min-width: 600px)
+and (max-width: 1080px)
+and (orientation: portrait)
+{
+    .background {
+        position: fixed;
+        opacity: .7;
+        z-index: 1;
+        min-height: 100%;
+        min-width: 100%;
+        width: 1500px;
+        height: 1500px;
+        top: -20%;
+        left: -30%;
+        background-size: cover;
+        background-position: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 800px;
+    }
+    .grid-item {
+        background-color: lightblue;
+        border: 2px black solid;
+        border-radius: 5px;
+        font-size: 28pt;
+        font: serif;
+        height: 220px;
+        width: 260px;
+        font-weight: bold;
+        margin: 65px 35px 35px 65px;
+    }
+    .grid-item a {
+        color: black;
+        justify-items: center;
+        font: serif;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+    }
+    #warn {
+        font-weight: bold;
+    }
+    .body {
+        height: 1200px;
+        width: 800px;
+        font-size: 18pt;
+    }
+    #tips {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      width: 270px;
+      float: right;
+    }
+    #tips2 {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      float:right;
+    }
+.adjust {
+            width: 880px;
+        }
+        #addDiv2, #addDiv3,
+        #addDiv4, #addDiv5, #addDiv6, #addDiv7, #addDiv8, #addDiv9,
+        #addDiv10, #addDiv11, #addDiv12, #minusDiv2,
+        #minusDiv3, #minusDiv4, #minusDiv5, #minusDiv6, #minusDiv7,
+        #minusDiv8, #minusDiv9, #minusDiv10, #minusDiv11, #minusDiv12, #help {
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+            font-size: 18pt;
+        }
+        #adjvalue, #adjvalue2, #adjvalue3,
+        #adjvalue4, #adjvalue5, #adjvalue6,
+        #adjvalue7, #adjvalue8, #adjvalue9,
+        #adjvalue10, #adjvalue11, #adjvalue12, #Selection, #Selection2, #Selection3,
+        #Selection4, #Selection5, #Selection6, #Selection7,
+        #Selection8, #Selection9, #Selection10, #Selection11,
+        #Selection12, #text, #text2, #text3, #text4,
+        #text5, #text6, #text7, #text8, #text9, #text10,
+        #text11, #text12, #convertedOutput, #convertedOutput2, #convertedOutput3,
+        #convertedOutput4, #convertedOutput5, #convertedOutput6,
+        #convertedOutput7, #convertedOutput8, #convertedOutput9,
+        #convertedOutput10, #convertedOutput11, #convertedOutput12, #value,
+        #wvalue, #wSelection, #wSelection2,
+        #wconvertedOutput, #wfracOutput {
+            width: 400px;
+            height: 70px;
+            margin-top: 5px;
+            font-size: 18pt;
+        }
+        #convertQrtr, #convertThird, #convertHalf, #convertDub,
+        #convertTrip, #convertQuad, #reset, #convert, #clear, #wconvert, #wclear {
+            width: 250px;
+            height: 70px;
+            font-size: 18pt;
+        }
+        #back, #help {
+        width: 100px;
+        height: 50px;
+        font-size: 24pt;
+        }
+        #frac {
+            width: 275px;
+            height: 50px;
+            font-size: 18pt;
+        }
+}
+
+
+/* Desktops landscape------------------ */
+@media only screen
+and (min-width : 1366px)
+and (max-width: 1920px)
+and (orientation: landscape)
+{
+    .background {
+        position: fixed;
+        opacity: .7;
+        z-index: 1;
+        min-height: 100%;
+        min-width: 100%;
+        width: 2100px;
+        height: 1500px;
+        top: 0;
+        left: 0%;
+        background-size: cover;
+        background-position: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 1768px;
+    }
+    .grid-item {
+        background-color: lightblue;
+        border: 2px black solid;
+        border-radius: 5px;
+        font-size: 16pt;
+        font: serif;
+        height: 220px;
+        width: 260px;
+        font-weight: bold;
+        margin: 65px 35px 35px 65px;
+    }
+    .grid-item a {
+        color: black;
+        justify-items: center;
+        font: serif;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+    }
+#warn {
+        font-weight: bold;
+    }
+    .body {
+        height: 1500px;
+        width: 900px;
+    }
+    #tips {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      width: 270px;
+      float: right;
+    }
+    #tips2 {
+      background-color: white;
+      padding: 7px 7px 7px 10px;
+      border-radius: 10%;
+      border: 2px black dashed;
+      float:right;
+    }
+}

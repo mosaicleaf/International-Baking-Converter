@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="home.css">
+    <title></title>
+</head>
+<body>
+<img class = "background" src="cups.png"/>
+<div class="body">
+    <button><a href="index.html" id="back">Back</a></button>
+    <div class="help">
+        <button><a href="helpus.html" id="help">?</a></button>
+    </div>
+    <h2>US Customary Conversion</h2>
+    <div id="tips">
+        Select an ingredient option for
+        ounce, gram, or pound if
+        converting to a different
+        measurement.<br><br>
+        Example: Changing Cups to
+        Pounds you will need you to
+        select an ingredient in pounds.
+        <br><br>
+        1 stick of butter is 8 tablespoons.
+    </div>
+    <h3>Dry Measurements</h3>
+    Amount
+    <input type="number" id="value" placeholder="Insert value"> <br> <br>
+    <label>From:</label>
+    <select name="converts" id="Selection">
+        <option value="select">Choose Option</option>
+        <option value="tsp">Teaspoons</option>
+        <option value="tbsp">Tablespoons</option>
+        <option value="cup">Cups</option>
+        <option value="lb">Pounds</option>
+        <option value="lbap">Pounds-All Purpose Flour</option>
+        <option value="lbaf">Pounds-Almond Flour</option>
+        <option value="lbbp">Pounds-Baking Powder</option>
+        <option value="lbbs">Pounds-Baking Soda</option>
+        <option value="lbbf">Pounds-Bread Flour</option>
+        <option value="lbb">Pounds-Butter</option>
+        <option value="lbcc">Pounds-Chocolate Chips</option>
+        <option value="lbc">Pounds-Cinnamon</option>
+        <option value="lbcp">Pounds-Cocoa Powder</option>
+        <option value="lbps">Pounds-Confectioner's Sugar</option>
+        <option value="lbct">Pounds-Cream of Tartar</option>
+        <option value="lbgs">Pounds-Granulated Sugar</option>
+        <option value="lbpbs">Pounds-Packed Brown Sugar</option>
+        <option value="lbss">Pounds-Sourdough Starter</option>
+        <option value="lbwwf">Pounds-Whole Wheat Flour</option>
+        <option value="lby">Pounds-Yeast</option>
+        <option value="oz">Ounces</option>
+        <option value="ozap">Ounces-All Purpose Flour</option>
+        <option value="ozaf">Ounces-Almond Flour</option>
+        <option value="ozbp">Ounces-Baking Powder</option>
+        <option value="ozbs">Ounces-Baking Soda</option>
+        <option value="ozbf">Ounces-Bread Flour</option>
+        <option value="ozb">Ounces-Butter</option>
+        <option value="ozcc">Ounces-Chocolate Chips</option>
+        <option value="ozc">Ounces-Cinnamon</option>
+        <option value="ozcp">Ounces-Cocoa Powder</option>
+        <option value="ozps">Ounces-Confectioner's Sugar</option>
+        <option value="ozct">Ounces-Cream of Tartar</option>
+        <option value="ozgs">Ounces-Granulated Sugar</option>
+        <option value="ozpbs">Ounces-Packed Brown Sugar</option>
+        <option value="ozss">Ounces-Sourdough Starter</option>
+        <option value="ozwwf">Ounces-Whole Wheat Flour</option>
+        <option value="ozy">Ounces-Yeast</option>
+        <option value="g">Grams</option>
+        <option value="g125">Grams-All Purpose Flour</option>
+        <option value="g96">Grams-Almond Flour</option>
+        <option value="g213">Grams-Baking Powder</option>
+        <option value="g163">Grams-Baking Soda</option>
+        <option value="g130">Grams-Bread Flour</option>
+        <option value="g227">Grams-Butter</option>
+        <option value="g170">Grams-Chocolate Chips</option>
+        <option value="g132">Grams-Cinnamon</option>
+        <option value="g152">Grams-Cocoa Powder</option>
+        <option value="g121">Grams-Confectioner's Sugar</option>
+        <option value="g160">Grams-Cream of Tartar</option>
+        <option value="g200">Grams-Granulated Sugar</option>
+        <option value="g195">Grams-Packed Brown Sugar</option>
+        <option value="g230">Grams-Sourdough Starter</option>
+        <option value="g113">Grams-Whole Wheat Flour</option>
+        <option value="g225">Grams-Yeast</option>
+    </select><br><br>
+    <label>To:</label>
+    <select name="converts2" id="Selection2">
+        <option value="select">Choose Option</option>
+        <option value="tsp">Teaspoons</option>
+        <option value="tbsp">Tablespoons</option>
+        <option value="cup">Cups</option>
+        <option value="lb">Pounds</option>
+        <option value="lbap">Pounds-All Purpose Flour</option>
+        <option value="lbaf">Pounds-Almond Flour</option>
+        <option value="lbbp">Pounds-Baking Powder</option>
+        <option value="lbbs">Pounds-Baking Soda</option>
+        <option value="lbbf">Pounds-Bread Flour</option>
+        <option value="lbb">Pounds-Butter</option>
+        <option value="lbcc">Pounds-Chocolate Chips</option>
+        <option value="lbc">Pounds-Cinnamon</option>
+        <option value="lbcp">Pounds-Cocoa Powder</option>
+        <option value="lbps">Pounds-Confectioner's Sugar</option>
+        <option value="lbct">Pounds-Cream of Tartar</option>
+        <option value="lbgs">Pounds-Granulated Sugar</option>
+        <option value="lbpbs">Pounds-Packed Brown Sugar</option>
+        <option value="lbss">Pounds-Sourdough Starter</option>
+        <option value="lbwwf">Pounds-Whole Wheat Flour</option>
+        <option value="lby">Pounds-Yeast</option>
+        <option value="oz">Ounces</option>
+        <option value="ozap">Ounces-All Purpose Flour</option>
+        <option value="ozaf">Ounces-Almond Flour</option>
+        <option value="ozbp">Ounces-Baking Powder</option>
+        <option value="ozbs">Ounces-Baking Soda</option>
+        <option value="ozbf">Ounces-Bread Flour</option>
+        <option value="ozb">Ounces-Butter</option>
+        <option value="ozcc">Ounces-Chocolate Chips</option>
+        <option value="ozc">Ounces-Cinnamon</option>
+        <option value="ozcp">Ounces-Cocoa Powder</option>
+        <option value="ozps">Ounces-Confectioner's Sugar</option>
+        <option value="ozct">Ounces-Cream of Tartar</option>
+        <option value="ozgs">Ounces-Granulated Sugar</option>
+        <option value="ozpbs">Ounces-Packed Brown Sugar</option>
+        <option value="ozss">Ounces-Sourdough Starter</option>
+        <option value="ozwwf">Ounces-Whole Wheat Flour</option>
+        <option value="ozy">Ounces-Yeast</option>
+        <option value="g">Grams</option>
+        <option value="g125">Grams-All Purpose Flour</option>
+        <option value="g96">Grams-Almond Flour</option>
+        <option value="g213">Grams-Baking Powder</option>
+        <option value="g163">Grams-Baking Soda</option>
+        <option value="g130">Grams-Bread Flour</option>
+        <option value="g227">Grams-Butter</option>
+        <option value="g170">Grams-Chocolate Chips</option>
+        <option value="g132">Grams-Cinnamon</option>
+        <option value="g152">Grams-Cocoa Powder</option>
+        <option value="g121">Grams-Confectioner's Sugar</option>
+        <option value="g160">Grams-Cream of Tartar</option>
+        <option value="g200">Grams-Granulated Sugar</option>
+        <option value="g195">Grams-Packed Brown Sugar</option>
+        <option value="g230">Grams-Sourdough Starter</option>
+        <option value="g113">Grams-Whole Wheat Flour</option>
+        <option value="g225">Grams-Yeast</option>
+    </select>
+    <br>
+    <p>Equals: <input type="text" id="convertedOutput" /></p>
+    <button id="convert">Convert</button>
+    <button id="clear">Reset</button>
+
+    <br><br>
+    <h3>Liquid Measurements</h3>
+    Amount
+    <input type="number" id="wvalue" placeholder="Insert value"> <br> <br>
+    <label>From:</label>
+    <select name="wconverts" id="wSelection">
+        <option value="wselect">Choose Option</option>
+        <option value="tsp">Teaspoons</option>
+        <option value="tbsp">Tablespoons</option>
+        <option value="floz">Fluid Ounces</option>
+        <option value="cup">Cups</option>
+        <option value="pt">Pints</option>
+        <option value="qt">Quarts</option>
+        <option value="gal">Gallons</option>
+        <option value="lbbm">Pounds-Buttermilk</option>
+        <option value="lbcm">Pounds-Condensed Milk</option>
+        <option value="lbcs">Pounds-Corn Syrup</option>
+        <option value="lbem">Pounds-Evaporated Milk</option>
+        <option value="lbhc">Pounds-Heavy Cream</option>
+        <option value="lbm">Pounds-Milk</option>
+        <option value="lbw">Pounds-Water</option>
+        <option value="ozbm">Ounces-Buttermilk</option>
+        <option value="ozcm">Ounces-Condensed Milk</option>
+        <option value="ozcs">Ounces-Corn Syrup</option>
+        <option value="ozem">Ounces-Evaporated Milk</option>
+        <option value="ozhc">Ounces-Heavy Cream</option>
+        <option value="ozm">Ounces-Milk</option>
+        <option value="ozw">Ounces-Water</option>
+        <option value="g242">Grams-Buttermilk</option>
+        <option value="g306">Grams-Condensed Milk</option>
+        <option value="g326">Grams-Corn Syrup</option>
+        <option value="g252">Grams-Evaporated Milk</option>
+        <option value="g235">Grams-Heavy Cream</option>
+        <option value="g245">Grams-Milk</option>
+        <option value="g237">Grams-Water</option>
+    </select><br> <br>
+    <label>To:</label>
+    <select name="wconverts2" id="wSelection2">
+        <option value="wselect">Choose Option</option>
+        <option value="tsp">Teaspoons</option>
+        <option value="tbsp">Tablespoons</option>
+        <option value="floz">Fluid Ounces</option>
+        <option value="cup">Cups</option>
+        <option value="pt">Pints</option>
+        <option value="qt">Quarts</option>
+        <option value="gal">Gallons</option>
+        <option value="lbbm">Pounds-Buttermilk</option>
+        <option value="lbcm">Pounds-Condensed Milk</option>
+        <option value="lbcs">Pounds-Corn Syrup</option>
+        <option value="lbem">Pounds-Evaporated Milk</option>
+        <option value="lbhc">Pounds-Heavy Cream</option>
+        <option value="lbm">Pounds-Milk</option>
+        <option value="lbw">Pounds-Water</option>
+        <option value="ozbm">Ounces-Buttermilk</option>
+        <option value="ozcm">Ounces-Condensed Milk</option>
+        <option value="ozcs">Ounces-Corn Syrup</option>
+        <option value="ozem">Ounces-Evaporated Milk</option>
+        <option value="ozhc">Ounces-Heavy Cream</option>
+        <option value="ozm">Ounces-Milk</option>
+        <option value="ozw">Ounces-Water</option>
+        <option value="g242">Grams-Buttermilk</option>
+        <option value="g306">Grams-Condensed Milk</option>
+        <option value="g326">Grams-Corn Syrup</option>
+        <option value="g252">Grams-Evaporated Milk</option>
+        <option value="g235">Grams-Heavy Cream</option>
+        <option value="g245">Grams-Milk</option>
+        <option value="g237">Grams-Water</option>
+    </select>
+    <br>
+    <p>Equals: <input type="text" id="wconvertedOutput" /></p>
+    <button id="wconvert">Convert</button>
+    <button id="wclear">Reset</button>
+    <br><br>
+    If you would like to know what you'd need to get as
+    close to the decimal displayed, please click the
+    "What do I need?" button.
+
+    <br><br>Example: 0.08325 Tablespoons. Click the button and it will show you need 2 tsp, 1/2 tsp, and 1/64 tsp.
+    <p id="warn">Please copy the value before leaving this page.</p>
+    <button><a href="fractioningus.html" id="frac">What do I need?</a></button>
+    <br><br><br>
+</div>
+<script src="crosscountry.js"></script>
+</body>
+</html>

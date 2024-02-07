@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<img class = "background" src="cups.png"/>
+<div class="body">
+    <button><a href="index.html" id="back" >Back</a></button>
+    <div class="help">
+        <button><a href="helprec.html" id="help">?</a></button>
+    </div>
+    <div class="adjust">
+        <h2>Recipe Adjuster</h2>
+        Amount:
+        <input type="number" id="adjvalue" placeholder="Input value"><br>
+        Unit:
+        <select name="converts" id="Selection">
+            <option value="select">Choose Option</option>
+            <option value="oz">Ounces</option>
+            <option value="g">Grams</option>
+            <option value="kg">Kilograms</option>
+            <option value="tsp">Teaspoons</option>
+            <option value="tbsp">Tablespoons</option>
+            <option value="floz">Fluid Ounces</option>
+            <option value="cup">Cups</option>
+            <option value="lb">Pounds</option>
+            <option value="gal">Gallons</option>
+            <option value="ml">Millilitres</option>
+            <option value="l">Litres</option>
+        </select><br>
+        Ingredient:
+        <input type="text" placeholder="Add ingredient" id="text" size="15">
+        <br> <br>
+        <label>New Amount:</label>
+        <input type="text" id="convertedOutput" size="10"/>
+        <br><button onclick="addDiv2()" id="addDiv2">+</button>
+
+        <div id="add2">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue2" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection2">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text2" size="15">
+            <br><br>
+            New Amount:
+            <input type="text" id="convertedOutput2" size="10"/>
+            <br><button onclick="addDiv3()" id="addDiv3">+</button>
+            <button onclick="minusDiv2()" id="minusDiv2">-</button>
+        </div>
+
+        <div id="add3">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue3" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection3">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text3" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput3" size="10"/>
+            <br><button onclick="addDiv4()" id="addDiv4">+</button>
+            <button onclick="minusDiv3()" id="minusDiv3">-</button>
+        </div>
+
+        <div id="add4">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue4" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection4">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text4" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput4" size="10"/>
+            <br><button onclick="addDiv5()" id="addDiv5">+</button>
+            <button onclick="minusDiv4()" id="minusDiv4">-</button>
+        </div>
+
+        <div id="add5">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue5" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection5">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text5" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput5" size="10"/>
+            <br><button onclick="addDiv6()" id="addDiv6">+</button>
+            <button onclick="minusDiv5()" id="minusDiv5">-</button>
+        </div>
+
+        <div id="add6">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue6" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection6">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text6" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput6" size="10"/>
+            <br><button onclick="addDiv7()" id="addDiv7">+</button>
+            <button onclick="minusDiv6()" id="minusDiv6">-</button>
+        </div>
+
+        <div id="add7">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue7" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection7">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text7" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput7" size="10"/>
+            <br><button onclick="addDiv8()" id="addDiv8">+</button>
+            <button onclick="minusDiv7()" id="minusDiv7">-</button>
+        </div>
+
+        <div id="add8">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue8" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection8">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text8" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput8" size="10"/>
+            <br><button onclick="addDiv9()" id="addDiv9">+</button>
+            <button onclick="minusDiv8()" id="minusDiv8">-</button>
+        </div>
+
+        <div id="add9">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue9" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection9">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text9" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput9" size="10"/>
+            <br><button onclick="addDiv10()" id="addDiv10">+</button>
+            <button onclick="minusDiv9()" id="minusDiv9">-</button>
+        </div>
+
+        <div id="add10">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue10" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection10">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text10" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput10" size="10"/>
+            <br><button onclick="addDiv11()" id="addDiv11">+</button>
+            <button onclick="minusDiv10()" id="minusDiv10">-</button>
+        </div>
+
+        <div id="add11">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue11" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection11">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text11" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput11" size="10"/>
+            <br><button onclick="addDiv12()" id="addDiv12">+</button>
+            <button onclick="minusDiv11()" id="minusDiv11">-</button>
+        </div>
+
+        <div id="add12">
+            <br>
+            Amount:
+            <input type="number" id="adjvalue12" placeholder="Input value"><br>
+            Unit:
+            <select name="converts" id="Selection12">
+                <option value="select">Choose Option</option>
+                <option value="oz">Ounces</option>
+                <option value="g">Grams</option>
+                <option value="tsp">Teaspoons</option>
+                <option value="tbsp">Tablespoons</option>
+                <option value="floz">Fluid Ounces</option>
+                <option value="cup">Cups</option>
+                <option value="lb">Pounds</option>
+                <option value="gal">Gallons</option>
+                <option value="ml">Millilitres</option>
+                <option value="l">Litres</option>
+            </select><br>
+            Ingredient:
+            <input type="text" placeholder="Add ingredient" id="text12" size="15">
+            <br><br>
+            <label>New Amount:</label>
+            <input type="text" id="convertedOutput12" size="10"/>
+            <br>
+            <button onclick="minusDiv12()" id="minusDiv12">-</button>
+        </div>
+        <br><br>
+        <b>Helpful Conversions</b>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3/4 is 0.75<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2/3 is 0.666<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/2 is 0.5<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/3 is 0.333<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/4 is 0.25<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/8 is 0.125<br>
+        <br><br>
+        <button id="convertQrtr">Convert 1/4</button>
+        <button id="convertThird">Convert 1/3</button>
+        <button id="convertHalf">Convert 1/2</button><br><br>
+        <button id="convertDub">Convert 2x</button>
+        <button id="convertTrip">Convert 3x</button>
+        <button id="convertQuad">Convert 4x</button>
+        <br><br>
+        <button id="reset">Reset</button>
+        <br><br>
+        If you would like to know what you'd need to get as
+        close to the decimal displayed, please click the
+        "What do I need?" button.
+
+        <br><br>Example: 0.08325 Tablespoons. Click the button and it will show you need 2 tsp, 1/2 tsp, and 1/64 tsp.
+        <p id="warn">Please copy the value before leaving this page.</p>
+        <button><a href="fractioningrec.html" id="frac">What do I need?</a></button>
+        <br><br><br>
+    </div>
+    <script src="recipeadj.js"></script>
+</div>
+</body>
+</html>

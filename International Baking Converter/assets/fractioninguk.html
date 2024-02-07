@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<img class = "background" src="cups.png"/>
+<div class="body">
+    <button><a href="ukconvers.html" id="back">Back</a></button>
+    <div class="help">
+        <button><a href="helpfuk.html" id="help">?</a></button>
+    </div>
+    <br>
+    <div>
+
+        <h2>What do I need?</h2>
+        <div id="tips2">
+            Drop: 1/64 tsp <br>
+            Smidgen: 1/32 tsp <br>
+            Pinch: 1/16 tsp <br>
+            Dash: 1/8 tsp <br>
+            Tad: 1/4 tsp
+        </div> <br>
+        Value
+        <input type="number" id="value" placeholder="Insert value">
+        <br><br>
+
+        <select name="converts" id="Selection">
+            <option value="select">Choose Option</option>
+            <option value="austsp">Australian Teaspoons</option>
+            <option value="austbsp">Australian Tablespoons</option>
+            <option value="auscup">Australian Cups</option>
+            <option value="tsp">UK Teaspoons</option>
+            <option value="tbsp">UK Tablespoons</option>
+            <option value="cup">UK Cups</option>
+            <!--<option value="pt">UK Pints</option>
+            <option value="qt">UK Quarts</option>
+            <option value="gal">UK Gallons</option>-->
+            <option value="tsp">U.S. and Canadian Teaspoons</option>
+            <option value="tbsp">U.S. and Canadian Tablespoons</option>
+            <option value="cup">U.S. and Canadian Cups</option>
+            <!--<option value="pt">U.S. and Canadian Pints</option>
+            <option value="qt">U.S. and Canadian Quarts</option>
+            <option value="lb">U.S. and Canadian Pounds</option>
+            <option value="gal">U.S. and Canadian Gallons</option>-->
+        </select>
+        <br><br>
+        <button id="convert">Convert</button>
+        <button id="clear">Reset</button>
+        <br><br><br>
+        <label class="whatText">What's needed: </label><textarea input type="text" id="fracOutput" class="whatbox"></textarea>
+        <br><br>
+        <p>
+            If you don't have anything
+            before the decimal you <b>must</b> put a zero in front or it will not work.
+        </p><br><br><br>
+    </div>
+    <script src="fractioning.js"></script>
+</div>
+</body>
+</html>

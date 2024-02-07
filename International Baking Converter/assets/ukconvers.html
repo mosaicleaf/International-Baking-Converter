@@ -1,0 +1,95 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<img class = "background" src="cups.png"/>
+<div class="body">
+    <button><a href="index.html" id="back">Back</a></button>
+    <div class="help">
+        <button><a href="helpuk.html" id="help">?</a></button>
+    </div>
+    <div>
+        <h2>UK Imperial and Metric Conversion</h2>
+        <div id="tips">
+            Volume - space something takes up<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example - cups or gallons
+            <br><br>
+            Weight - measurement of an object's<br> heaviness<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example - grams or pounds
+            <br><br>
+            1 stick of butter is 8 tablespoons.
+        </div>
+        <h3>Volume Measurements</h3>
+        Amount
+        <input type="number" id="value" placeholder="Insert value"> <br> <br>
+        <label>From:</label>
+        <select name="ukconverts" id="Selection">
+            <option value="select">Choose Option</option>
+            <option value="uktsp">Teaspoons</option>
+            <option value="uktbsp">Tablespoons</option>
+            <option value="ukfloz">Fluid Ounces</option>
+            <option value="ukcup">Cups</option>
+            <option value="ukpt">UK Pints</option>
+            <option value="ukqt">UK Quarts</option>
+            <option value="ukgal">UK Gallons</option>
+            <option value="caml">UK Millilitres</option>
+            <option value="cal">UK Litres</option>
+        </select><br> <br>
+        <label>To:</label>
+        <select name="ukconverts2" id="Selection2">
+            <option value="select">Choose Option</option>
+            <option value="uktsp">Teaspoons</option>
+            <option value="uktbsp">Tablespoons</option>
+            <option value="ukfloz">Fluid Ounces</option>
+            <option value="ukcup">Cups</option>
+            <option value="ukpt">UK Pints</option>
+            <option value="ukqt">UK Quarts</option>
+            <option value="ukgal">UK Gallons</option>
+            <option value="caml">UK Millilitres</option>
+            <option value="cal">UK Litres</option>
+        </select>
+        <br>
+        <p>Equals: <input type="text" id="convertedOutput" /></p>
+        <button id="convert">Convert</button>
+        <button id="clear">Reset</button>
+
+        <br>
+        <h3>Weight Measurements</h3>
+        Amount
+        <input type="number" id="wvalue" placeholder="Insert value"> <br> <br>
+        <label>From:</label>
+        <select name="ukwconverts" id="wSelection">
+            <option value="wselect">Choose Option</option>
+            <option value="oz">Ounces</option>
+            <option value="lb">Pounds</option>
+            <option value="g">Grams</option>
+        </select><br> <br>
+        <label>To:</label>
+        <select name="ukwconverts2" id="wSelection2">
+            <option value="wselect">Choose Option</option>
+            <option value="oz">Ounces</option>
+            <option value="lb">Pounds</option>
+            <option value="g">Grams</option>
+        </select>
+        <br>
+        <p>Equals: <input type="text" id="wconvertedOutput" /></p>
+        <button id="wconvert">Convert</button>
+        <button id="wclear">Reset</button>
+        <br><br>
+        If you would like to know what you'd need to get as
+        close to the decimal displayed, please click the
+        "What do I need?" button.
+
+        <br><br>Example: 0.08325 Tablespoons. Click the button and it will show you need 2 tsp, 1/2 tsp, and 1/64 tsp.
+        <p id="warn">Please copy the value before leaving this page.</p>
+        <button><a href="fractioninguk.html" id="frac">What do I need?</a></button>
+        <br><br><br>
+    </div>
+    <script src="crosscountry.js"></script>
+</div>
+</body>
+</html>

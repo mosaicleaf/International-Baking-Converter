@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<img class = "background" src="cups.png"/>
+<div class="body">
+    <button><a href="index.html" id="back">Back</a></button>
+    <div class="help">
+        <button><a href="helpcross.html" id="help">?</a></button>
+    </div>
+    <h2>Cross Country Conversion</h2>
+    <div id="tips">
+        Select an ingredient option for
+        ounce, gram, kilogram, or pound if
+        converting to a different
+        measurement.<br><br>
+        Example: Changing Cups to
+        Pounds you will need you to
+        select an ingredient in pounds.
+        <br><br>
+        1 stick of butter is 8 tablespoons.
+    </div><br>
+    Amount
+    <input type="number" id="value" placeholder="Insert value">
+    <br><br>
+    <label>From:</label><br>
+    <select name="converts" id="Selection">
+        <option value="select">Choose Option</option>
+        <option disabled>-- Metric Volume --</option>
+        <option value="caml">Millilitres</option>
+        <option value="cal">Litres</option>
+        <option disabled>-- Metric Weight --</option>
+        <option value="oz">Ounces</option>
+        <option value="ozap">Ounces-All Purpose Flour/Plain Flour</option>
+        <option value="ozaf">Ounces-Almond Flour/Almond Meal</option>
+        <option value="ozbp">Ounces-Baking Powder</option>
+        <option value="ozbs">Ounces-Baking Soda/Bicarbonate of Soda</option>
+        <option value="ozbf">Ounces-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="ozb">Ounces-Butter</option>
+        <option value="ozbm">Ounces-Buttermilk</option>
+        <option value="ozcc">Ounces-Chocolate Chips</option>
+        <option value="ozc">Ounces-Cinnamon</option>
+        <option value="ozcp">Ounces-Cocoa Powder</option>
+        <option value="ozcm">Ounces-Condensed Milk</option>
+        <option value="ozps">Ounces-Confectioner's Sugar/Icing Sugar</option>
+        <option value="ozcs">Ounces-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="ozct">Ounces-Cream of Tartar</option>
+        <option value="ozem">Ounces-Evaporated Milk</option>
+        <option value="ozgs">Ounces-Granulated Sugar/Castor Sugar</option>
+        <option value="ozhc">Ounces-Heavy Cream/Double Cream</option>
+        <option value="ozm">Ounces-Milk</option>
+        <option value="ozpbs">Ounces-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="ozss">Ounces-Sourdough Starter</option>
+        <option value="ozw">Ounces-Water</option>
+        <option value="ozwwf">Ounces-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="ozy">Ounces-Yeast</option>
+        <option value="lb">Pounds</option>
+        <option value="lbap">Pounds-All Purpose Flour/Plain Flour</option>
+        <option value="lbaf">Pounds-Almond Flour/Almond Meal</option>
+        <option value="lbbp">Pounds-Baking Powder</option>
+        <option value="lbbs">Pounds-Baking Soda/Bicarbonate of Soda</option>
+        <option value="lbbf">Pounds-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="lbb">Pounds-Butter</option>
+        <option value="lbbm">Pounds-Buttermilk</option>
+        <option value="lbcc">Pounds-Chocolate Chips</option>
+        <option value="lbc">Pounds-Cinnamon</option>
+        <option value="lbcp">Pounds-Cocoa Powder</option>
+        <option value="lbcm">Pounds-Condensed Milk</option>
+        <option value="lbps">Pounds-Confectioner's Sugar/Icing Sugar</option>
+        <option value="lbcs">Pounds-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="lbct">Pounds-Cream of Tartar</option>
+        <option value="lbem">Pounds-Evaporated Milk</option>
+        <option value="lbgs">Pounds-Granulated Sugar/Castor Sugar</option>
+        <option value="lbhc">Pounds-Heavy Cream/Double Cream</option>
+        <option value="lbm">Pounds-Milk</option>
+        <option value="lbpbs">Pounds-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="lbss">Pounds-Sourdough Starter</option>
+        <option value="lbw">Pounds-Water</option>
+        <option value="lbwwf">Pounds-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="lby">Pounds-Yeast</option>
+        <option value="g">Grams</option>
+        <option value="g125">Grams-All Purpose Flour/Plain Flour</option>
+        <option value="g96">Grams-Almond Flour/Almond Meal</option>
+        <option value="g213">Grams-Baking Powder</option>
+        <option value="g163">Grams-Baking Soda/Bicarbonate of Soda</option>
+        <option value="g130">Grams-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="g227">Grams-Butter</option>
+        <option value="g242">Grams-Buttermilk</option>
+        <option value="g170">Grams-Chocolate Chips</option>
+        <option value="g132">Grams-Cinnamon</option>
+        <option value="g152">Grams-Cocoa Powder</option>
+        <option value="g306">Grams-Condensed Milk</option>
+        <option value="g121">Grams-Confectioner's Sugar/Icing Sugar</option>
+        <option value="g326">Grams-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="g160">Grams-Cream of Tartar</option>
+        <option value="g252">Grams-Evaporated Milk</option>
+        <option value="g200">Grams-Granulated Sugar/Castor Sugar</option>
+        <option value="g235">Grams-Heavy Cream/Double Cream</option>
+        <option value="g245">Grams-Milk</option>
+        <option value="g195">Grams-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="g230">Grams-Sourdough Starter</option>
+        <option value="g237">Grams-Water</option>
+        <option value="g113">Grams-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="g225">Grams-Yeast</option>
+        <option value="kg">Kilograms</option>
+        <option value="kgap">Kilograms-All Purpose Flour/Plain Flour</option>
+        <option value="kgaf">Kilograms-Almond Flour/Almond Meal</option>
+        <option value="kgbp">Kilograms-Baking Powder</option>
+        <option value="kgbs">Kilograms-Baking Soda/Bicarbonate of Soda</option>
+        <option value="kgbf">Kilograms-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="kgb">Kilograms-Butter</option>
+        <option value="kgbm">Kilograms-Buttermilk</option>
+        <option value="kgcc">Kilograms-Chocolate Chips</option>
+        <option value="kgc">Kilograms-Cinnamon</option>
+        <option value="kgcp">Kilograms-Cocoa Powder</option>
+        <option value="kgcm">Kilograms-Condensed Milk</option>
+        <option value="kgps">Kilograms-Confectioner's Sugar/Icing Sugar</option>
+        <option value="kgcs">Kilograms-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="kgct">Kilograms-Cream of Tartar</option>
+        <option value="kgem">Kilograms-Evaporated Milk</option>
+        <option value="kggs">Kilograms-Granulated Sugar/Castor Sugar</option>
+        <option value="kghc">Kilograms-Heavy Cream/Double Cream</option>
+        <option value="kgm">Kilograms-Milk</option>
+        <option value="kgpbs">Kilograms-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="kgss">Kilograms-Sourdough Starter</option>
+        <option value="kgw">Kilograms-Water</option>
+        <option value="kgwwf">Kilograms-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="kgy">Kilograms-Yeast</option>
+        <option disabled>-- Australia International Metric Cup</option>
+        <option value="austsp">Australian Teaspoons</option>
+        <option value="austbsp">Australian Tablespoons</option>
+        <option value="auscup">Australian Cups</option>
+        <option disabled>-- UK Imperial Volume Measurements --</option>
+        <option value="uktsp">UK Teaspoons</option>
+        <option value="uktbsp">UK Tablespoons</option>
+        <option value="ukfloz">UK Fluid Ounces</option>
+        <option value="ukcup">UK Cups</option>
+        <option value="ukpt">UK Pints</option>
+        <option value="ukqt">UK Quarts</option>
+        <option value="ukgal">UK Gallons</option>
+        <option disabled>-- US Dry Measurements --</option>
+        <option value="tsp">US Teaspoons</option>
+        <option value="tbsp">US Tablespoons</option>
+        <option value="cup">US Cups</option>
+        <option disabled>-- US Liquid Measurements --</option>
+        <option value="tsp">US Teaspoons</option>
+        <option value="tbsp">US Tablespoons</option>
+        <option value="floz">US Fluid Ounces</option>
+        <option value="cup">US Cups</option>
+        <option value="pt">US Pints</option>
+        <option value="qt">US Quarts</option>
+        <option value="gal">US Gallons</option>
+    </select>
+    <br><br>
+
+    <label>To:</label><br>
+    <select name="converts2" id="Selection2">
+        <option value="select">Choose Option</option>
+        <option disabled>-- Metric Volume --</option>
+        <option value="caml">Millilitres</option>
+        <option value="cal">Litres</option>
+        <option disabled>-- Metric Weight --</option>
+        <option value="oz">Ounces</option>
+        <option value="ozap">Ounces-All Purpose Flour/Plain Flour</option>
+        <option value="ozaf">Ounces-Almond Flour/Almond Meal</option>
+        <option value="ozbp">Ounces-Baking Powder</option>
+        <option value="ozbs">Ounces-Baking Soda/Bicarbonate of Soda</option>
+        <option value="ozbf">Ounces-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="ozb">Ounces-Butter</option>
+        <option value="ozbm">Ounces-Buttermilk</option>
+        <option value="ozcc">Ounces-Chocolate Chips</option>
+        <option value="ozc">Ounces-Cinnamon</option>
+        <option value="ozcp">Ounces-Cocoa Powder</option>
+        <option value="ozcm">Ounces-Condensed Milk</option>
+        <option value="ozps">Ounces-Confectioner's Sugar/Icing Sugar</option>
+        <option value="ozcs">Ounces-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="ozct">Ounces-Cream of Tartar</option>
+        <option value="ozem">Ounces-Evaporated Milk</option>
+        <option value="ozgs">Ounces-Granulated Sugar/Castor Sugar</option>
+        <option value="ozhc">Ounces-Heavy Cream/Double Cream</option>
+        <option value="ozm">Ounces-Milk</option>
+        <option value="ozpbs">Ounces-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="ozss">Ounces-Sourdough Starter</option>
+        <option value="ozw">Ounces-Water</option>
+        <option value="ozwwf">Ounces-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="ozy">Ounces-Yeast</option>
+        <option value="lb">Pounds</option>
+        <option value="lbap">Pounds-All Purpose Flour/Plain Flour</option>
+        <option value="lbaf">Pounds-Almond Flour/Almond Meal</option>
+        <option value="lbbp">Pounds-Baking Powder</option>
+        <option value="lbbs">Pounds-Baking Soda/Bicarbonate of Soda</option>
+        <option value="lbbf">Pounds-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="lbb">Pounds-Butter</option>
+        <option value="lbbm">Pounds-Buttermilk</option>
+        <option value="lbcc">Pounds-Chocolate Chips</option>
+        <option value="lbc">Pounds-Cinnamon</option>
+        <option value="lbcp">Pounds-Cocoa Powder</option>
+        <option value="lbcm">Pounds-Condensed Milk</option>
+        <option value="lbps">Pounds-Confectioner's Sugar/Icing Sugar</option>
+        <option value="lbcs">Pounds-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="lbct">Pounds-Cream of Tartar</option>
+        <option value="lbem">Pounds-Evaporated Milk</option>
+        <option value="lbgs">Pounds-Granulated Sugar/Castor Sugar</option>
+        <option value="lbhc">Pounds-Heavy Cream/Double Cream</option>
+        <option value="lbm">Pounds-Milk</option>
+        <option value="lbpbs">Pounds-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="lbss">Pounds-Sourdough Starter</option>
+        <option value="lbw">Pounds-Water</option>
+        <option value="lbwwf">Pounds-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="lby">Pounds-Yeast</option>
+        <option value="g">Grams</option>
+        <option value="g125">Grams-All Purpose Flour/Plain Flour</option>
+        <option value="g96">Grams-Almond Flour/Almond Meal</option>
+        <option value="g213">Grams-Baking Powder</option>
+        <option value="g163">Grams-Baking Soda/Bicarbonate of Soda</option>
+        <option value="g130">Grams-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="g227">Grams-Butter</option>
+        <option value="g242">Grams-Buttermilk</option>
+        <option value="g170">Grams-Chocolate Chips</option>
+        <option value="g132">Grams-Cinnamon</option>
+        <option value="g152">Grams-Cocoa Powder</option>
+        <option value="g306">Grams-Condensed Milk</option>
+        <option value="g121">Grams-Confectioner's Sugar/Icing Sugar</option>
+        <option value="g326">Grams-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="g160">Grams-Cream of Tartar</option>
+        <option value="g252">Grams-Evaporated Milk</option>
+        <option value="g200">Grams-Granulated Sugar/Castor Sugar</option>
+        <option value="g235">Grams-Heavy Cream/Double Cream</option>
+        <option value="g245">Grams-Milk</option>
+        <option value="g195">Grams-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="g230">Grams-Sourdough Starter</option>
+        <option value="g237">Grams-Water</option>
+        <option value="g113">Grams-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="g225">Grams-Yeast</option>
+        <option value="kg">Kilograms</option>
+        <option value="kgap">Kilograms-All Purpose Flour/Plain Flour</option>
+        <option value="kgaf">Kilograms-Almond Flour/Almond Meal</option>
+        <option value="kgbp">Kilograms-Baking Powder</option>
+        <option value="kgbs">Kilograms-Baking Soda/Bicarbonate of Soda</option>
+        <option value="kgbf">Kilograms-Bread Flour/Baker's Flour/Strong Flour</option>
+        <option value="kgb">Kilograms-Butter</option>
+        <option value="kgbm">Kilograms-Buttermilk</option>
+        <option value="kgcc">Kilograms-Chocolate Chips</option>
+        <option value="kgc">Kilograms-Cinnamon</option>
+        <option value="kgcp">Kilograms-Cocoa Powder</option>
+        <option value="kgcm">Kilograms-Condensed Milk</option>
+        <option value="kgps">Kilograms-Confectioner's Sugar/Icing Sugar</option>
+        <option value="kgcs">Kilograms-Corn Syrup/Glucose Syrup/Glucose-Fructose Syrup</option>
+        <option value="kgct">Kilograms-Cream of Tartar</option>
+        <option value="kgem">Kilograms-Evaporated Milk</option>
+        <option value="kggs">Kilograms-Granulated Sugar/Castor Sugar</option>
+        <option value="kghc">Kilograms-Heavy Cream/Double Cream</option>
+        <option value="kgm">Kilograms-Milk</option>
+        <option value="kgpbs">Kilograms-Packed Light Brown Sugar/Demerara Sugar</option>
+        <option value="kgss">Kilograms-Sourdough Starter</option>
+        <option value="kgw">Kilograms-Water</option>
+        <option value="kgwwf">Kilograms-Whole Wheat Flour/Wholemeal Flour</option>
+        <option value="kgy">Kilograms-Yeast</option>
+        <option disabled>-- Australia International Metric Cup</option>
+        <option value="austsp">Australian Teaspoons</option>
+        <option value="austbsp">Australian Tablespoons</option>
+        <option value="auscup">Australian Cups</option>
+        <option disabled>-- UK Imperial Volume Measurements --</option>
+        <option value="uktsp">UK Teaspoons</option>
+        <option value="uktbsp">UK Tablespoons</option>
+        <option value="ukfloz">UK Fluid Ounces</option>
+        <option value="ukcup">UK Cups</option>
+        <option value="ukpt">UK Pints</option>
+        <option value="ukqt">UK Quarts</option>
+        <option value="ukgal">UK Gallons</option>
+        <option disabled>-- US Dry Measurements --</option>
+        <option value="tsp">US Teaspoons</option>
+        <option value="tbsp">US Tablespoons</option>
+        <option value="cup">US Cups</option>
+        <option disabled>-- US Liquid Measurements --</option>
+        <option value="tsp">US Teaspoons</option>
+        <option value="tbsp">US Tablespoons</option>
+        <option value="floz">US Fluid Ounces</option>
+        <option value="cup">US Cups</option>
+        <option value="pt">US Pints</option>
+        <option value="qt">US Quarts</option>
+        <option value="gal">US Gallons</option>
+    </select>
+    <br>
+
+    <p>Equals: <input type="text" id="convertedOutput" /></p>
+
+    <button id="convert">Convert</button>
+    <button id="clear">Reset</button>
+
+    <div id="hide">
+        <p>Equals: <input type="text" id="wconvertedOutput" /></p>
+
+        <button id="wconvert">Convert</button>
+        <button id="wclear">Reset</button>
+    </div>
+    <br><br>
+    If you would like to know what you'd need to get as
+    close to the decimal displayed, please click the
+    "What do I need?" button.
+
+    <br><br>Example: 0.08325 Tablespoons. Click the button and it will show you need 2 tsp, 1/2 tsp, and 1/64 tsp.
+    <p id="warn">Please copy the value before leaving this page.</p>
+    <button><a href="fractioningcross.html" id="frac">What do I need?</a></button>
+    <br><br><br>
+</div>
+<script src="crosscountry.js"></script>
+</body>
+</html>
